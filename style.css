@@ -1,0 +1,76 @@
+header, header ul {
+top:0px;
+left:0px;
+border:0px;
+margin:0px;
+padding:0px;
+}
+
+header * { /* elementi dell'header */
+display:inline; /* questa riga li mette uno accanto all'altro */
+padding:0px 4px;
+bottom:0px;
+}
+
+h1 { /* titolo uChef */
+font-size:50px;
+}
+
+header li a { /* altre voci del menu in alto */
+
+}
+
+form { /* sezione di inserimento */
+border-width: 2px;
+border-radius: 7px 7px 7px 7px;
+border:5px solid black;
+}
+
+input[name*=nome] { /* nome della nuova ricetta */
+margin-right:20%;
+margin-left:20%;
+font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+font-size: 30px;
+border-radius: 7px 7px 7px 7px;
+
+}
+
+input[name*=ingredient] { 
+font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+border-radius: 7px 7px 7px 7px;
+width:30%;
+
+}
+input[name*=quant] {
+font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+border-radius: 7px 7px 7px 7px;
+width:4em;
+
+}
+
+#procedimento { 
+font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+border-radius: 7px 7px 7px 7px;
+width:60%;
+overflow:hidden;
+background-color:#FFFFAB;
+
+
+}
+
+#desk { 
+margin-right:10%;
+margin-left:10%;
+border-width: 2px;
+border-radius: 7px 7px 7px 7px;
+width:80%;
+border:5px solid black;
+padding:5px;
+background-color:#FFFFCB;
+
+}
+
+#pax { 
+width:4em;
+}
+
