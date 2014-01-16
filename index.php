@@ -1,5 +1,5 @@
 <?php
-phpinfo(); //include('db.php');
+include('db.php');
 ?>
 <!DOCTYPE html> 
 <title>uChef</title>
