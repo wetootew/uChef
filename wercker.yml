@@ -46,7 +46,8 @@ deploy:
     - script:
         name: Set permissions for SSH key
         code: |-
-          chmod 0400 $HOME/.ssh/id_rsa
+          chmod 0700 $HOME/.ssh
+          chmod 0700 $HOME/.ssh/id_rsa
     - script:
         name: Git push deploy
         code: |-
