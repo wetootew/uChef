@@ -25,8 +25,8 @@ deploy:
           if [ -d ".git" ]; then rm -rf .git; fi
 
           # Configure git user
-          git config --global user.name "wercker"
-          git config --global user.email pleasemailus@wercker.com
+          git config --global user.name "wetootew"
+          git config --global user.email x.x@aol.it
 
           # Initialize new repository and add everything
           git init
