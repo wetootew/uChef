@@ -36,7 +36,7 @@ deploy:
           git commit -m 'Deploy commit'
 
           # Add fortrabbit remote
-          git remote add fortrabbit "$FORTRABBIT_GIT_REMOTE"
+          git remote add fortrabbit $FORTRABBIT_GIT_REMOTE
     - script:
         name: Git push deploy
         code: |-
