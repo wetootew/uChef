@@ -1,4 +1,4 @@
 <?php
-echo '<p>db link not impemented!</p>'; //if (!pg_connect("dbname=d6qm36u34n7hb7 host=ec2-107-20-234-127.compute-1.amazonaws.com port=5432 user=ctgwllpexesxtg password=SnntH9C3QrH1TgArkLb0ytXlm- sslmode=require"))
-    //echo '<p> db error </p>';
+if (!mysql_select_db('uchef', $link = mysql_connect('uchef.mysql.eu1.frbit.com', 'uchef', 'WY6ioOmkHkUd4zMU')))
+    echo '<p> db error ' . mysql_errno() . ": " . mysql_error() . '</p>;
 ?>
