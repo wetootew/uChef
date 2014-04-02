@@ -7,21 +7,6 @@ include('db.php');
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script>
-function addField(e,event) {
-  event.preventDefault();
-  alert(event.keyCode + 'ver 2');
-  if (event.keyCode == 8 && e.getElementsByTagName('input')[0].value == "") 
-    e.parentNode.removeChild(e);
-  if (event.keyCode != 13) 
-    return true;
-  var cloned = e.cloneNode(true);
-  var inputs = cloned.getElementsByTagName('input');
-  e.parentNode.insertBefore(cloned, e.nextSibling);
-  for(var i = 0; i < inputs.length; i++)
-    inputs[i].value = "";
-  inputs[0].focus();
-  return false;
-} 
 
 function fitResize(t) {
   t.style.height = 'auto';
@@ -37,14 +22,47 @@ function toggle(obj) {
 }
 </script>
 
-<header>
-  <a href=index.php><h1>toprated</h1></a>
+<style>
+#login {float:right;}
+#logo {float:left;}
+h1 {margin:0;padding:0;}
+body > header{position:fixed;width:100%;}
+.topBar {height:36px;margin:2px;padding:2px;}
+.category {border:2px solid yellow; float:left;}
+header {background-color: orange;}
+</style>
+
+<!DOCTYPE html>
+<header class=topBar>
+  <h1 id=logo><a href=index.php>TopRated</a></h1>
 
   <div id=login>
     <form action=# method=post>
-      <input type=text name=usr value="user">
-      <input type=text name=pw value="password">
+      <input type=text name=usr value="user"><br>
+      <input type=password name=pw value="password">
     </form>
   </div>
-</header>
+</header>        
+  <div class=topBar></div>
+  <div class=category>
+      <header><h1>Sport</h1></header>
+          <ol>
+            <li>sito 1: ***** <input type=button value=vota!>
+            <li>sito 2: ***** <input type=button value=vota!>
+            <li>sito 3: ***** <input type=button value=vota!>
+  </div>
+  <div class=category>
+      <header><h1>Sport</h1></header>
+          <ol>
+              <li>sito 1: ***** <input type=button value=vota!>
+            <li>sito 2: ***** <input type=button value=vota!>
+            <li>sito 3: ***** <input type=button value=vota!>
+  </div>
+  <div class=category>
+      <header><h1>Sport</h1></header>
+          <ol>
+            <li>sito 1: ***** <input type=button value=vota!>
+            <li>sito 2: ***** <input type=button value=vota!>
+            <li>sito 3: ***** <input type=button value=vota!>
+  </div>
 
